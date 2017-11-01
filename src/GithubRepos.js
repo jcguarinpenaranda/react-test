@@ -26,7 +26,7 @@ export default class GithubRepos extends React.Component {
    * @param {string} user
    */
   getUserRepos(user) {
-    return superagent.get(`https://api.github.com/orgs/${user}/repos`)
+    return superagent.get(`https://api.github.com/users/${user}/repos`)
       .then(r => r.body);
   }
 
@@ -34,11 +34,11 @@ export default class GithubRepos extends React.Component {
     return (
       <div>
         {this.state.repos.map((repo) => (
-          <div style={{ padding: 10, backgroundColor: 'whitesmoke', marginBottom: 10 }}>
+          <div key={repo.url} style={{ padding: 10, backgroundColor: 'whitesmoke', marginBottom: 10 }}>
             <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
               <img src={repo.owner.avatar_url} style={{ height: 50, width: 50 }} />
               <div style={{ marginLeft: 10 }}>
-                <p><a href={repo.url}><b>{repo.name}</b></a></p>
+                <p><a href={repo.html_url}><b>{repo.name}</b></a></p>
                 <p>{repo.description}</p>
               </div>
             </div>
