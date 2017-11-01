@@ -12,7 +12,7 @@ const app = (
   <div>
     <Hello />
     <ImageClick onImgClick={fn} /> 
-    <GithubRepos user="owsas" />
+    <GithubRepos user="jcguarinpenaranda" />
   </div>
 );
 
