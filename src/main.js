@@ -3,12 +3,12 @@ import { render } from 'react-dom'
 import Hello from './Hello'
     import YordiFunction from './YordiFunction'
 import ImageClick from './ImageClick'
-import ChangeColor from './changeColor'
+import GithubRepos from './GithubRepos';
+import ChangeColor from './changeColor';
 
 const fn = function() {
   alert('mi funcion');
 };
-
 
 const app = (
   <div>
@@ -17,6 +17,7 @@ const app = (
     <ImageClick onImgClick={fn} /> 
     <ChangeColor />
     <YordiFunction />
+    <GithubRepos user="jcguarinpenaranda" />
   </div>
 );
 
