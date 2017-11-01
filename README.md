@@ -6,7 +6,7 @@ This is a test with ReactJS, to demonstrate some basic interactions.
 
 Clone this project to your local machine with `git clone <this_repo_url>` and then run `cd react-test`
 
-##Running
+## Running
 
 `npm install`
 
