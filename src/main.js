@@ -1,6 +1,7 @@
 import React from 'react'
 import { render } from 'react-dom'
 import Hello from './Hello'
+    import YordiFunction from './YordiFunction'
 import ImageClick from './ImageClick'
 
 const fn = function() {
@@ -10,7 +11,9 @@ const fn = function() {
 const app = (
   <div>
     <Hello />
+      
     <ImageClick onImgClick={fn} /> 
+    <YordiFunction />
   </div>
 );
 
