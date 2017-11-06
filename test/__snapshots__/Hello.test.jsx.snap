@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rendered view should match snapshot 1`] = `
+<Hello>
+  <div>
+    <p>
+      0
+    </p>
+    <button
+      className="buttonSumar"
+      onClick={[Function]}
+    >
+      Sumar
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      Restar
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      Duplicar
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      Dividir
+    </button>
+  </div>
+</Hello>
+`;
