@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+<ImageClick
+  onImgClick={[Function]}
+>
+  <button
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "purple",
+      }
+    }
+  >
+    <img
+      alt="Paisaje"
+      src="http://www.fondos10.net/wp-content/uploads/2010/04/Hermoso-paisaje.jpg"
+    />
+  </button>
+</ImageClick>
+`;

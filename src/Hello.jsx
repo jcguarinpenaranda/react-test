@@ -41,7 +41,7 @@ class Hello extends React.Component {
       <div>
         <p>{this.state.num}</p>
         {/* probar los títulos de los botones */}
-        <button onClick={this.sumarNumero}>Sumar</button>
+        <button className="buttonSumar" onClick={this.sumarNumero}>Sumar</button>
         <button onClick={this.restarNumero}>Restar</button>
         <button onClick={this.doblarNumero}>Duplicar</button>
         <button onClick={this.dividirNumero}>Dividir</button>
