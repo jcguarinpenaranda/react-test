@@ -1,4 +1,6 @@
 const path = require('path');
+// const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const loaders = [
@@ -6,13 +8,6 @@ const loaders = [
     test: /\.jsx?$/,
     exclude: /node_modules/,
     loader: 'babel-loader',
-    query: {
-      presets: [
-        'babel-preset-es2015',
-        'babel-preset-react',
-      ],
-      plugins: [],
-    },
   },
 ];
 
@@ -33,6 +28,7 @@ module.exports = {
       filename: 'index.html',
       inject: false,
     }),
+    // new BundleAnalyzerPlugin(),
   ],
   module: {
     loaders,
