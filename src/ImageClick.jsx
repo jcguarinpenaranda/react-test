@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 * click, muestra un alert al usuario
 */
 const ImageClick = props => (
-  <button onClick={props.onImgClick}>
+  <button style={{ background: 'purple' }} onClick={props.onImgClick}>
     <img alt="Paisaje" src="http://www.fondos10.net/wp-content/uploads/2010/04/Hermoso-paisaje.jpg" />
   </button>
 );
